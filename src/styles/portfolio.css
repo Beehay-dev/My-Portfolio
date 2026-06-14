@@ -458,3 +458,61 @@ a.project-card {
   .nav { padding: 20px 24px; }
   .section { padding: 60px 24px; }
 }
+
+@media (max-width: 768px) {
+  /* existing rules stay — add these: */
+
+  /* NAV FIX */
+  .nav {
+    padding: 16px 20px;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nav-logo {
+    font-size: 16px;
+    letter-spacing: 2px;
+    white-space: nowrap;       /* prevent logo wrapping */
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    gap: 16px;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  /* HERO FIX */
+  .hero-left {
+    padding: 100px 24px 60px;   /* 100px top clears the fixed nav */
+    justify-content: flex-start; /* push content up, not to bottom */
+    padding-top: 110px;
+  }
+
+  .hero-name {
+    font-size: clamp(52px, 14vw, 72px);
+    margin-bottom: 24px;
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 16px;
+  }
+
+  .hero-desc {
+    max-width: 100%;
+  }
+}
+
+/* ── Very small phones (≤ 380px) ── */
+@media (max-width: 380px) {
+  .nav-logo { font-size: 13px; }
+  .nav-links a { font-size: 8px; letter-spacing: 1px; }
+  .nav-links { gap: 10px; }
+
+  .hero-name { font-size: clamp(44px, 13vw, 60px); }
+}
