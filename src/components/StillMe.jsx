@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 const ANNOTATION_TAGS = ["Atlas Capture", "Turing", "OpenTrain"];
-const MEDIA_TAGS = ["Apex Visual Studio PH", "2021–2023"];
+const MEDIA_TAGS = ["Apex Visual Studio PH", "2021–2026"];
 
 function Corners() {
   return (
