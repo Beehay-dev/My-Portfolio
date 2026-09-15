@@ -26,7 +26,7 @@ export const projects = [
     title: "ONYX TRANSPORT",
     desc: "A transport company website that provides information about the company's services, fleet, and contact details.",
     stack: ["JavaScript", "CSS","HTML"],
-    href: "https://onyxtransport.com.ng/",
+    href: "https://onyxtransport.ng/",
   },
  
   {

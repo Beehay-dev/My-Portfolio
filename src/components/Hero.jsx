@@ -1,12 +1,12 @@
+import StillMe from "./StillMe";
+
 export default function Hero() {
   return (
     <section className="hero">
       <div className="grid-overlay" />
       <div className="hero-left">
         <div className="hero-eyebrow">Frontend Developer · Open to opportunities</div>
-        <h1 className="hero-name">
-            Alao<br /><span>Breakthrough</span><br />Hepzibah
-          </h1>
+        <StillMe />
         <p className="hero-desc">
           I build clean, responsive interfaces with React and vanilla
            CSS.
@@ -27,10 +27,6 @@ export default function Hero() {
           <div className="hero-stat-num">100%</div>
           <div className="hero-stat-label">Frontend Focused</div>
         </div>
-      </div>
-      <div className="hero-scroll">
-        <div className="hero-scroll-line" />
-        SCROLL
       </div>
     </section>
   );
